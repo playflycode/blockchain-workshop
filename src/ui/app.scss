@@ -1,3 +1,64 @@
 body {
-    padding: 20px;
+  padding: 0;
+}
+
+.rotating-icon {
+  display: inline-block;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes twist-up {
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+div, textarea {
+  width: 100%;
+}
+
+textarea {
+  height: 200px;
+}
+
+.root {
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+}
+
+.mx-auto, .container {
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.storages-list {
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    margin: 5px 0;
+    flex: 1;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+}
+
+.address {
+  font-size: 0.8rem;
+}
+
+h2 {
+  margin-top: 0
 }
